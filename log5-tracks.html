@@ -1,0 +1,175 @@
+<head>
+	<style>
+		body{
+			background-color:black;
+		}
+		
+		a:link{
+			color: white;
+			background-color: transparent;
+		}
+		
+		a:visited{
+			color: white;
+			background-color: transparent;
+		}
+		
+		.container{
+		display: grid;
+		grid-template-columns:1fr 5fr;
+		grid-template-rows: 1fr 10fr 1fr;
+		}
+		
+		.logTitle{
+			font-size: 50px;
+			padding-left: 20px;
+		}
+		
+		.logDate{
+			font-size:15px;
+			padding-left: 25px;
+		}
+		
+		.logContents{
+			padding-left: 20px;
+		}
+		
+
+			#head{
+				border-style:solid solid none solid;
+				border-width:2px;
+				color:white;
+				text-align:center;
+				font-size: 60px;
+				background-color:gray;
+				grid-column:span 6;
+			}
+			
+			#nav{
+				border-style:none dashed none solid;
+				border-width:2px;
+				text-align:left;
+				padding-left:30px;
+				font-size: 20px;
+				grid-column:span 1;
+				color:white;
+			}
+			
+			#main{
+				border-style:none solid none none;
+				border-width:2px;
+				text-align:left;
+				font-size: 20px;
+                grid-column: span 1;
+				color:white;
+			}
+			
+			#aside{
+				border-style:none solid none dashed;
+				border-width:2px;
+				text-align:right;
+				padding-right:30px;
+				font-size:20px;
+				grid-column:span 1;
+				color:white;
+			}
+			
+			#footer{
+				border-style:dashed solid solid solid;
+				border-width:2px;
+				text-align:center;
+				font-size: 10px;
+                grid-column: span 6;
+				color:white;
+			}
+			
+		@media only screen and (max-width: 800px){
+			
+			#imageSizeResponsiveLandscape{
+			height:300px;
+			width:400px;
+			}
+		
+			#imageSizeResponsivePortrait{
+				height:400px;
+				width:300px;
+			}
+		
+			#imageSizeResponsiveSquare{
+				height:300px;
+				width:300px;
+			}
+		
+			.container{
+				grid-template-columns: 1fr 5fr;
+				grid-template-rows:1fr 6fr 1fr;
+			}
+			#main{
+				grid-column: span 2;
+				border-style:none solid none none;
+			}
+			
+			#nav{
+				border-style: none dashed none solid
+			}
+			
+			#aside{
+				grid-column: span 6;
+				border-style: dashed solid dashed solid;
+			}
+			
+			#footer{
+				grid-column: span 6;
+				border-style: none solid solid solid;
+			}
+		}
+		
+		@media only screen and (max-width: 600px){
+			.container{
+				grid-template-columns: 1fr;
+				grid-template-rows:1fr 1fr 5fr 1fr;
+			}
+			
+			#head{
+				grid-column: span 1;
+			}
+			
+			#footer{
+				grid-column: span 1;
+				border-style:none solid solid solid
+			}
+			
+			#nav{
+				grid-column: span 1;
+				border-style: none solid dashed solid;
+			}
+			#main{
+				grid-column: span 1;
+				border-style: none solid dashed solid;
+			}
+			#aside{
+				grid-column: span 1;
+				border-style: dashed solid dashed solid
+			}
+		}
+			
+		</style>
+		<title> Log </title>
+	</head>
+	
+	<body>
+		<div class=container>
+			<div id=head> Log </div>
+			<div id=nav> [1] <a href="index.html"> Home </a> <br>
+						[2] Log <br>
+						[3] <a href="archive.html"> Archive </a> <br>
+						[4] <a href="changelog.html"> Changelog </a> <br>
+						[5] <a href="puzzle.html"> ??? </a>
+			</div>
+			<div id=main> <div class="logTitle"> Off The Tracks </div>
+							<div class="logDate"> 12/30/23 </div>
+							<p class="logContents"> sometimes i sit and ponder about what do I regret? i've done a lot of embarassing things, and some I remember vividly. will I ever undo what I did in the past? will everyone forgive me? am I blowing it out of proportion or am i actually bad for doing it? i doubt the first question can be answered with "yes", because i think im too off track that i won't get back on the tracks ever. i've done what was done, and all I can do is pray or hope that what I've done doesn't come back in some dramatic way to haunt me.
+			</div>
+			<div id=footer> This footer is like placeholder and stuff. This is the same copyright message used in my project, except this text isn't here! Wow! Think this looks familiar? That's because the text doesn't change for the different pages. Lame, but I can't hide any other stuff here. Don't forget to shrink the website to 800px or 600px width! Please! There's like 2 different formats because those are 2 types of devices, I think. I can't think of any other device other than a PC, tablet or phone that has a different width resolution. Take this explanation seriously! Also, be glad that this text is different. Before it was simply "blablabla this is mine not yours" something something. I can't remember because it was a placeholder anyways. At this point of writing I realized that the fake copyright isn't long enough to fill the entire footer. Oh no! I guess I have to add more filler. I would complain about something but complaining is petty and would probably get blackmailed. LOL. Can we use acronyms? This is a website, and websites are online. Can we use internet acronyms? I really hope this footer isnt paid too much attention. I'm doing this the long-winded way where instead of resizing the text to make it fit on the footer at the cost of it being readable, I'm typing everything out so that it fills the entire footer. I can't be bothered to add secret pages. The last time I did, they didn't affect the grade. Unless maybe I change my mind and this statement turns out to be false or something. Hey, it's almost filled now! Did you know the last part is the only remaining part of the placeholder footer? That's pretty neat! Okay, I have to say my goodbyes. Bye bye! Copyright and stuff!<br>
+			martin copyright 2023</div>
+		</div>
